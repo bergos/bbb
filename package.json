@@ -1,0 +1,22 @@
+{
+  "name": "bbb",
+  "version": "0.1.0",
+  "description": "Breitbandausbau in Bayern (high speed internet in Bavaria)",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build.js",
+    "start": "node_modules/http-server/bin/http-server public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bergos/bbb.git"
+  },
+  "author": "Thomas Bergwinkl <bergi@axolotlfarm.org> (https://www.bergnet.org/people/bergi/card#me)",
+  "license": "MIT",
+  "devDependencies": {
+    "iconv-lite": "^0.4.13"
+  },
+  "dependencies": {
+    "http-server": "^0.8.5"
+  }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-slider.min.css">
+  <link rel="stylesheet" href="css/leaflet.css" />
+
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap-slider.min.js"></script>
+  <script src="js/leaflet.js"></script>
+  <script src="js/lodash.min.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+
+    <div class="page-header">
+      <h2>Breitbandausbau in Bayern</h2>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-3 col-sm-12">
+        <div class="form-group">
+          <label for="administration-filter">Bezirk</label>
+          <select id="administration-filter" class="form-control"></select>
+        </div>
+
+        <div class="form-group">
+          <label for="district-filter">Landkreis</label>
+          <select id="district-filter" class="form-control"></select>
+        </div>
+
+        <div class="form-group">
+          <label for="time-range-filter">Zeitraum</label>
+          <input id="time-range-filter" type="text" class="hidden" style="width: 100%;">
+        </div>
+
+        <div>
+          <p class="text-justify">
+            Abgesehen von den Gemeinden Mengkofen und Postau dürften die meisten weißen Flecken auf einen Ausbau ohne eine Förderung durch die unten genannten Förderprogramme zurück zu führen sein.
+            Aus dem Umkreis Mengkofen sind z.B. folgende Maßnahmen bekannt:
+          </p>
+
+          <ul>
+            <li>
+              In Landau a.d. Isar baut die Telekom mit eigenen Mitteln aus: <a href="http://www.landau-isar.de/bgm_info02.aspx?bgmnewsid=13">Seite der Gemeinde</a>
+            </li>
+            <li>
+              Die Gemeinde Essenbach hat in Eigenregie ein Glasfasernetz im Gemeindebereich gebaut: <a href="http://www.essenbach.de/239.html">Seite der Gemeinde</a>
+            </li>
+            <li>
+              Im Markt Arnstorf wurde 2012 das Glasfasernetz fertigstellt und als Modellprojekt mit Mitteln des Bundes gefördert: <a href="http://www.arnstorf.de/breitbandinitiative.aspx">Seite der Gemeinde</a>
+            </li>
+          </ul>
+
+          <p class="text-justify">
+            Die öffentlichen Daten für das erste Förderprogramm enthalten nur die Gemeinden ohne Datumsangabe.
+            Deshalb werden diese gesammelt am 1.1.2013 angezeigt:<br>
+            <strong>Quelle: <a href="http://www.sisby.de/">sisby.de</a></strong>
+          </p>
+
+          <p class="text-justify">
+            Daten des aktuelles Förderprogramms:<br>
+            <strong>Quelle: <a href="http://www.schnelles-internet-in-bayern.de/">schnelles-internet-in-bayern.de</a></strong>
+          </p>
+
+          <p class="text-justify">
+            Gemeinde Geometrien:<br>
+            <strong>Quelle: <a href="http://opendatalab.de/projects/geojson-utilities/">http://opendatalab.de/projects/geojson-utilities/</a></strong>
+          </p>
+
+          <p class="text-justify">
+            Der Quellcode dieser Seite steht auf <a href="https://github.com/bergos/bbb">Github</a> unter freier Lizenz zur Verfügung.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-9 col-sm-12">
+        <div id="map" style="height: 600px;"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/bbb.js"></script>
+</body>
+</html>
